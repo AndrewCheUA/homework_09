@@ -1,4 +1,4 @@
-def quit_f():
+def quit_f(_=None):
     print("Good bye!")
     quit()
 
