@@ -11,6 +11,7 @@ def input_error(handler):
     def wrapper(*args, **kwargs):
         try:
             handler(*args, **kwargs)
+                return handler(*args, **kwargs)
         except IndexError:
             print("Give me name and phone please")
         except ValueError:
