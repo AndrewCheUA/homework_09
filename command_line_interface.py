@@ -8,9 +8,9 @@ END_DICT = {'good bye':quit_f,
 CONTACT_DICT = {}
 
 def input_error(handler):
-    def wrapper():
+    def wrapper(*args, **kwargs):
         try:
-            handler()
+            handler(*args, **kwargs)
         except IndexError:
             print("Give me name and phone please")
         except ValueError:
